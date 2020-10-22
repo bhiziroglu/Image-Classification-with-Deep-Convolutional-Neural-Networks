@@ -7,7 +7,8 @@ This project implements AlexNet using C++ / Libtorch and trains it on the CIFAR 
 ## Requirements
 - GCC / Clang
 - CMake (3.10.2+)
-- LibTorch (1.6.0)  
+- LibTorch (1.6.0)
+
 If you are going to use GPU:
 - CUDA (10.0.130)
 - Nvidia Driver (450.80.02)
