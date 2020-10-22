@@ -16,29 +16,31 @@ You can install LibTorch from PyTorch's official [website](https://pytorch.org/g
 
 Download [CIFAR](https://www.cs.toronto.edu/~kriz/cifar.html).
 
-You can use ImageNet as well. AlexNet alreadys exists here, you would just need to write a dataloader for it.
+You can use ImageNet as well. AlexNet alreadys exists [here](https://github.com/bhiziroglu/Image-Classification-with-Deep-Convolutional-Neural-Networks/blob/master/alexnet.h#L49), you would just need to write a dataloader for it.
 
 
 ## Clone, build and run
 
 ```
-git clone https://github.com/bhiziroglu/Image-Classification-with-Deep-Convolutional-Neural-Networks
+$ git clone https://github.com/bhiziroglu/Image-Classification-with-Deep-Convolutional-Neural-Networks
 
-cd Image-Classification-with-Deep-Convolutional-Neural-Networks
+$ cd Image-Classification-with-Deep-Convolutional-Neural-Networks
 
-mkdir build
-cd build
+$ mkdir build
+$ cd build
 
-cmake -DCMAKE_PREFIX_PATH=your_libtorch_path ..
+$ cmake -DCMAKE_PREFIX_PATH=your_libtorch_path ..
 
-NOTE: If you want to use GPU, you should have CUDA installed before this step. cmake should find your CUDA installation automatically. For reference, mine is installed at : /usr/local/cuda
+NOTE: If you want to use GPU, you should have CUDA installed before this step. 
+cmake should find your CUDA installation automatically. 
+For reference, mine is installed at : /usr/local/cuda
 
-cmake --build . --config Release
+$ cmake --build . --config Release
 
 After you make changes to the code and want to build again:
 
-make
-./dnn
+$ make
+$ ./dnn
 ```
 
 Feel free to create an issue if you face build problems.
@@ -50,7 +52,7 @@ My main goal was to use C++ and Libtorch. For that reason, I didn't try to get a
 Test set accuracy is around 70%.  
 [Current SOTA](https://benchmarks.ai/cifar-10) is 99.37%.   
 
-You can try changing the hyperparameters, optimizer and adding data augmentation.
+You can try adding data augmentation and changing the hyperparameters to increase the test score.
 
 ### References
 
